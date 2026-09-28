@@ -1,0 +1,371 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Brother ❤️</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND STARS
+    ========================== -->
+    <div class="stars"></div>
+    <div class="stars stars-two"></div>
+
+
+    <!-- =========================
+         MUSIC BUTTON
+    ========================== -->
+    <button id="musicBtn" class="music-btn" onclick="toggleMusic()">
+        🎵
+    </button>
+
+    <audio id="birthdayMusic" loop>
+        <source src="assets/birthday-music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- =========================
+         HERO / OPENING SECTION
+    ========================== -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-text">
+                ✨ A little surprise for you...
+            </p>
+
+            <h1>
+                Hey Brother! 👀
+            </h1>
+
+            <p class="intro-text">
+                I made something special just for you.
+            </p>
+
+            <!-- Gift Box -->
+            <div class="gift-area">
+
+                <div id="giftBox" class="gift-box" onclick="openGift()">
+
+                    <div class="gift-lid"></div>
+
+                    <div class="gift-body">
+                        <div class="gift-ribbon-vertical"></div>
+                        <div class="gift-ribbon-horizontal"></div>
+                    </div>
+
+                </div>
+
+                <p id="giftText">
+                    Click the gift 🎁
+                </p>
+
+            </div>
+
+            <!-- Hidden Birthday Message -->
+            <div id="birthdayMessage" class="birthday-message">
+
+                <p class="small-text">
+                    🎉 SURPRISE!
+                </p>
+
+                <h2>
+                    Happy Birthday,<br>
+                    <span>My Brother ❤️</span>
+                </h2>
+
+                <p>
+                    Today is your special day...
+                    but I wanted to make it a little more special.
+                </p>
+
+                <button class="explore-btn" onclick="scrollToMemories()">
+                    Let's Begin ✨
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            ↓
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BIRTHDAY INTRO
+    ========================== -->
+    <section id="memories" class="section birthday-section">
+
+        <div class="section-title">
+
+            <p class="section-label">
+                🎂 TODAY IS YOUR DAY
+            </p>
+
+            <h2>
+                Another year of being<br>
+                <span>awesome.</span>
+            </h2>
+
+            <p>
+                From annoying me for no reason to being
+                there when I actually need you...
+                you've somehow managed to become
+                one of my favourite people. ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MEMORY SECTION
+    ========================== -->
+    <section class="section memories-section">
+
+        <div class="section-title">
+
+            <p class="section-label">
+                📸 OUR MEMORIES
+            </p>
+
+            <h2>
+                A few moments<br>
+                <span>worth remembering.</span>
+            </h2>
+
+        </div>
+
+        <div class="memory-grid">
+
+            <div class="memory-card">
+                <div class="photo-placeholder">
+                    📷
+                </div>
+
+                <h3>Memory One</h3>
+
+                <p>
+                    Add one of our favourite memories here.
+                </p>
+            </div>
+
+
+            <div class="memory-card">
+                <div class="photo-placeholder">
+                    📷
+                </div>
+
+                <h3>Memory Two</h3>
+
+                <p>
+                    A moment that still makes me smile.
+                </p>
+            </div>
+
+
+            <div class="memory-card">
+                <div class="photo-placeholder">
+                    📷
+                </div>
+
+                <h3>Memory Three</h3>
+
+                <p>
+                    Just another unforgettable moment.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BROTHER AWARDS
+    ========================== -->
+    <section class="section awards-section">
+
+        <div class="section-title">
+
+            <p class="section-label">
+                🏆 OFFICIAL AWARDS
+            </p>
+
+            <h2>
+                Brother of the Year<br>
+                <span>probably.</span>
+            </h2>
+
+        </div>
+
+        <div class="awards-grid">
+
+            <div class="award-card">
+                <div class="award-icon">😂</div>
+                <h3>Professional Annoyer</h3>
+                <p>
+                    Somehow you never run out of ways to annoy me.
+                </p>
+            </div>
+
+            <div class="award-card">
+                <div class="award-icon">🍕</div>
+                <h3>Food Stealing Champion</h3>
+                <p>
+                    Especially when the food belongs to me.
+                </p>
+            </div>
+
+            <div class="award-card">
+                <div class="award-icon">❤️</div>
+                <h3>Secretly Caring</h3>
+                <p>
+                    You may not always say it,
+                    but I know you care.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LETTER SECTION
+    ========================== -->
+    <section class="section letter-section">
+
+        <div class="letter-card">
+
+            <p class="section-label">
+                💌 A LETTER FOR YOU
+            </p>
+
+            <h2>
+                Dear Brother,
+            </h2>
+
+            <p>
+                Having you as my brother means having someone
+                who can annoy me one minute and make me laugh
+                the next.
+            </p>
+
+            <p>
+                We've shared so many little moments,
+                silly fights, laughs, memories and conversations.
+                And honestly, I wouldn't trade them for anything.
+            </p>
+
+            <p>
+                I hope this new year of your life brings you
+                happiness, success, good health and everything
+                you've been wishing for.
+            </p>
+
+            <p>
+                No matter how much we fight or tease each other,
+                you'll always have a special place in my heart.
+                ❤️
+            </p>
+
+            <p class="signature">
+                — With lots of love,<br>
+                Your Sibling ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL SURPRISE
+    ========================== -->
+    <section class="section final-section">
+
+        <div class="final-content">
+
+            <p class="section-label">
+                🎁 ONE LAST THING...
+            </p>
+
+            <h2>
+                There's still<br>
+                <span>one more surprise.</span>
+            </h2>
+
+            <button class="final-gift-btn" onclick="openFinalGift()">
+                🔐 Open Your Final Gift
+            </button>
+
+            <div id="finalGift" class="final-gift">
+
+                <div class="confetti">
+                    🎉 🎊 ✨ 🎂 ❤️ 🎁 ✨ 🎊 🎉
+                </div>
+
+                <h3>
+                    HAPPY BIRTHDAY! 🎂
+                </h3>
+
+                <p>
+                    May this year be filled with
+                    happiness, adventures, success,
+                    laughter and unforgettable memories.
+                </p>
+
+                <p class="big-heart">
+                    ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+
+        <p>
+            Made with ❤️ specially for my brother.
+        </p>
+
+        <p class="footer-small">
+            © 2026 Birthday Surprise
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
+
+This gives you the **complete main structure**. Next, `style.css` will make it look like a proper cinematic birthday gift website rather than a plain HTML page.
