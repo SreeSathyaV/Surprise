@@ -1,6 +1,5 @@
-```css
 /* =========================================
-   GLOBAL SETTINGS
+   GLOBAL
 ========================================= */
 
 * {
@@ -16,7 +15,7 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     background: #08080d;
-    color: #ffffff;
+    color: white;
     overflow-x: hidden;
 }
 
@@ -26,13 +25,28 @@ body {
 ========================================= */
 
 body::before {
+
     content: "";
+
     position: fixed;
+
     inset: 0;
+
     background:
-        radial-gradient(circle at 20% 20%, rgba(255, 180, 100, 0.08), transparent 25%),
-        radial-gradient(circle at 80% 70%, rgba(255, 100, 180, 0.08), transparent 25%);
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 180, 100, 0.08),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(255, 100, 180, 0.08),
+            transparent 25%
+        );
+
     pointer-events: none;
+
     z-index: -2;
 }
 
@@ -42,33 +56,96 @@ body::before {
 ========================================= */
 
 .stars {
+
     position: fixed;
+
     inset: 0;
+
     background-image:
-        radial-gradient(2px 2px at 20px 30px, white, transparent),
-        radial-gradient(1px 1px at 80px 90px, white, transparent),
-        radial-gradient(2px 2px at 150px 120px, white, transparent),
-        radial-gradient(1px 1px at 220px 40px, white, transparent),
-        radial-gradient(2px 2px at 300px 180px, white, transparent),
-        radial-gradient(1px 1px at 400px 80px, white, transparent),
-        radial-gradient(2px 2px at 500px 220px, white, transparent),
-        radial-gradient(1px 1px at 650px 150px, white, transparent),
-        radial-gradient(2px 2px at 750px 50px, white, transparent),
-        radial-gradient(1px 1px at 850px 250px, white, transparent);
+
+        radial-gradient(
+            2px 2px at 20px 30px,
+            white,
+            transparent
+        ),
+
+        radial-gradient(
+            1px 1px at 80px 90px,
+            white,
+            transparent
+        ),
+
+        radial-gradient(
+            2px 2px at 150px 120px,
+            white,
+            transparent
+        ),
+
+        radial-gradient(
+            1px 1px at 220px 40px,
+            white,
+            transparent
+        ),
+
+        radial-gradient(
+            2px 2px at 300px 180px,
+            white,
+            transparent
+        ),
+
+        radial-gradient(
+            1px 1px at 400px 80px,
+            white,
+            transparent
+        ),
+
+        radial-gradient(
+            2px 2px at 500px 220px,
+            white,
+            transparent
+        ),
+
+        radial-gradient(
+            1px 1px at 650px 150px,
+            white,
+            transparent
+        ),
+
+        radial-gradient(
+            2px 2px at 750px 50px,
+            white,
+            transparent
+        ),
+
+        radial-gradient(
+            1px 1px at 850px 250px,
+            white,
+            transparent
+        );
+
     background-size: 900px 300px;
+
     opacity: 0.45;
+
     animation: starsMove 25s linear infinite;
+
     pointer-events: none;
+
     z-index: -1;
 }
 
 .stars-two {
+
     opacity: 0.2;
+
     transform: scale(1.5);
+
     animation-duration: 40s;
 }
 
+
 @keyframes starsMove {
+
     from {
         transform: translateY(0);
     }
@@ -76,6 +153,7 @@ body::before {
     to {
         transform: translateY(-300px);
     }
+
 }
 
 
@@ -84,20 +162,27 @@ body::before {
 ========================================= */
 
 .music-btn {
+
     position: fixed;
+
     top: 25px;
+
     right: 25px;
 
     width: 48px;
+
     height: 48px;
 
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
 
-    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+
+    background: rgba(255,255,255,0.08);
+
     backdrop-filter: blur(12px);
 
     color: white;
+
     font-size: 20px;
 
     cursor: pointer;
@@ -108,20 +193,25 @@ body::before {
 }
 
 .music-btn:hover {
+
     transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.15);
+
+    background: rgba(255,255,255,0.15);
 }
 
 
 /* =========================================
-   HERO SECTION
+   HERO
 ========================================= */
 
 .hero {
+
     min-height: 100vh;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     position: relative;
@@ -130,14 +220,20 @@ body::before {
 }
 
 .hero-content {
+
     text-align: center;
+
     max-width: 850px;
+
     width: 100%;
 }
 
 .small-text {
+
     font-size: 14px;
+
     letter-spacing: 3px;
+
     text-transform: uppercase;
 
     color: #e7b87c;
@@ -146,6 +242,7 @@ body::before {
 }
 
 .hero h1 {
+
     font-family: "DM Serif Display", serif;
 
     font-size: clamp(55px, 9vw, 110px);
@@ -154,34 +251,54 @@ body::before {
 
     margin-bottom: 25px;
 
-    background: linear-gradient(
-        120deg,
-        #ffffff,
-        #ffd9a3,
-        #ffffff
-    );
+    background:
+        linear-gradient(
+            120deg,
+            #ffffff,
+            #ffd9a3,
+            #ffffff
+        );
 
     -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
 
     animation: titleGlow 4s ease-in-out infinite;
 }
 
+
 @keyframes titleGlow {
 
     0%,
     100% {
-        filter: drop-shadow(0 0 10px rgba(255, 190, 100, 0.1));
+
+        filter:
+            drop-shadow(
+                0 0 10px
+                rgba(255,190,100,0.1)
+            );
+
     }
 
     50% {
-        filter: drop-shadow(0 0 30px rgba(255, 190, 100, 0.35));
+
+        filter:
+            drop-shadow(
+                0 0 30px
+                rgba(255,190,100,0.35)
+            );
+
     }
+
 }
 
+
 .intro-text {
+
     color: #bdbdc8;
+
     font-size: 18px;
+
     margin-bottom: 45px;
 }
 
@@ -191,13 +308,18 @@ body::before {
 ========================================= */
 
 .gift-area {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
 }
 
 .gift-box {
+
     width: 150px;
+
     height: 130px;
 
     position: relative;
@@ -210,55 +332,71 @@ body::before {
 }
 
 .gift-box:hover {
+
     transform: scale(1.08);
 }
 
+
 .gift-body {
+
     position: absolute;
 
     width: 140px;
+
     height: 100px;
 
     left: 5px;
+
     bottom: 0;
 
     border-radius: 8px;
 
-    background: linear-gradient(
-        135deg,
-        #a94f75,
-        #642b55
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #a94f75,
+            #642b55
+        );
 
     box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.5),
-        0 0 35px rgba(200, 80, 140, 0.15);
+        0 20px 50px rgba(0,0,0,0.5),
+
+        0 0 35px
+        rgba(200,80,140,0.15);
 }
 
+
 .gift-lid {
+
     position: absolute;
 
     width: 150px;
+
     height: 35px;
 
     top: 15px;
+
     left: 0;
 
     border-radius: 8px;
 
-    background: linear-gradient(
-        135deg,
-        #c66b91,
-        #7d345f
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #c66b91,
+            #7d345f
+        );
 
     z-index: 2;
 }
 
+
 .gift-ribbon-vertical {
+
     position: absolute;
 
     width: 25px;
+
     height: 100%;
 
     left: 57px;
@@ -268,10 +406,13 @@ body::before {
     opacity: 0.9;
 }
 
+
 .gift-ribbon-horizontal {
+
     position: absolute;
 
     width: 100%;
+
     height: 18px;
 
     top: 35px;
@@ -281,7 +422,9 @@ body::before {
     opacity: 0.9;
 }
 
+
 .gift-area > p {
+
     margin-top: 25px;
 
     color: #aaaab7;
@@ -290,6 +433,7 @@ body::before {
 
     letter-spacing: 1px;
 }
+
 
 @keyframes giftFloat {
 
@@ -301,6 +445,7 @@ body::before {
     50% {
         transform: translateY(-12px);
     }
+
 }
 
 
@@ -309,15 +454,16 @@ body::before {
 ========================================= */
 
 .birthday-message {
+
     max-width: 600px;
 
     margin: 40px auto 0;
 
     padding: 35px;
 
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255,255,255,0.05);
 
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255,255,255,0.12);
 
     border-radius: 24px;
 
@@ -328,7 +474,9 @@ body::before {
     animation: messageAppear 0.8s ease forwards;
 }
 
+
 .birthday-message h2 {
+
     font-family: "DM Serif Display", serif;
 
     font-size: 48px;
@@ -338,11 +486,15 @@ body::before {
     margin-bottom: 20px;
 }
 
+
 .birthday-message h2 span {
+
     color: #e7b87c;
 }
 
+
 .birthday-message > p:not(.small-text) {
+
     color: #bcbcc6;
 
     line-height: 1.8;
@@ -350,17 +502,25 @@ body::before {
     margin-bottom: 25px;
 }
 
+
 @keyframes messageAppear {
 
     from {
+
         opacity: 0;
+
         transform: translateY(30px);
+
     }
 
     to {
+
         opacity: 1;
+
         transform: translateY(0);
+
     }
+
 }
 
 
@@ -370,17 +530,19 @@ body::before {
 
 .explore-btn,
 .final-gift-btn {
+
     border: none;
 
     padding: 14px 28px;
 
     border-radius: 50px;
 
-    background: linear-gradient(
-        135deg,
-        #e7b87c,
-        #c982a0
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #e7b87c,
+            #c982a0
+        );
 
     color: #17131a;
 
@@ -393,12 +555,15 @@ body::before {
     transition: 0.3s;
 }
 
+
 .explore-btn:hover,
 .final-gift-btn:hover {
+
     transform: translateY(-3px);
 
     box-shadow:
-        0 10px 30px rgba(231, 184, 124, 0.25);
+        0 10px 30px
+        rgba(231,184,124,0.25);
 }
 
 
@@ -407,6 +572,7 @@ body::before {
 ========================================= */
 
 .scroll-indicator {
+
     position: absolute;
 
     bottom: 30px;
@@ -418,6 +584,7 @@ body::before {
     animation: scrollBounce 1.5s infinite;
 }
 
+
 @keyframes scrollBounce {
 
     0%,
@@ -428,19 +595,22 @@ body::before {
     50% {
         transform: translateY(8px);
     }
+
 }
 
 
 /* =========================================
-   GENERAL SECTIONS
+   GENERAL SECTION
 ========================================= */
 
 .section {
+
     min-height: 80vh;
 
     padding: 120px 7%;
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
@@ -448,13 +618,17 @@ body::before {
     position: relative;
 }
 
+
 .section-title {
+
     max-width: 750px;
 
     margin-bottom: 60px;
 }
 
+
 .section-label {
+
     color: #e7b87c;
 
     font-size: 12px;
@@ -466,7 +640,9 @@ body::before {
     margin-bottom: 20px;
 }
 
+
 .section-title h2 {
+
     font-family: "DM Serif Display", serif;
 
     font-size: clamp(40px, 6vw, 70px);
@@ -476,11 +652,15 @@ body::before {
     margin-bottom: 25px;
 }
 
+
 .section-title h2 span {
+
     color: #e7b87c;
 }
 
+
 .section-title > p:not(.section-label) {
+
     color: #aaaab7;
 
     line-height: 1.9;
@@ -492,14 +672,15 @@ body::before {
 
 
 /* =========================================
-   BIRTHDAY SECTION
+   BIRTHDAY
 ========================================= */
 
 .birthday-section {
+
     background:
         radial-gradient(
             circle at 70% 50%,
-            rgba(231, 184, 124, 0.07),
+            rgba(231,184,124,0.07),
             transparent 35%
         );
 }
@@ -510,6 +691,7 @@ body::before {
 ========================================= */
 
 .memory-grid {
+
     display: grid;
 
     grid-template-columns:
@@ -518,59 +700,89 @@ body::before {
     gap: 25px;
 }
 
+
 .memory-card {
+
     padding: 18px;
 
-    background: rgba(255, 255, 255, 0.04);
+    background:
+        rgba(255,255,255,0.04);
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border:
+        1px solid
+        rgba(255,255,255,0.08);
 
     border-radius: 20px;
 
     transition: 0.4s;
 }
 
+
 .memory-card:hover {
+
     transform: translateY(-8px);
 
-    border-color: rgba(231, 184, 124, 0.3);
+    border-color:
+        rgba(231,184,124,0.3);
 
     box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.3);
+        0 20px 50px
+        rgba(0,0,0,0.3);
 }
 
+
+/* =========================================
+   ACTUAL PHOTOS
+========================================= */
+
 .photo-placeholder {
+
+    width: 100%;
+
     height: 280px;
 
     border-radius: 14px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #24232d,
-            #15151d
-        );
+    overflow: hidden;
 
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 45px;
-
-    color: #555563;
+    background: #24232d;
 
     margin-bottom: 20px;
 }
 
+
+.photo-placeholder img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.memory-card:hover
+.photo-placeholder img {
+
+    transform: scale(1.08);
+}
+
+
 .memory-card h3 {
+
     font-size: 18px;
 
     margin-bottom: 8px;
 }
 
+
 .memory-card p {
+
     color: #898996;
 
     font-size: 14px;
@@ -584,15 +796,18 @@ body::before {
 ========================================= */
 
 .awards-section {
+
     background:
         radial-gradient(
             circle at 20% 50%,
-            rgba(198, 107, 145, 0.07),
+            rgba(198,107,145,0.07),
             transparent 35%
         );
 }
 
+
 .awards-grid {
+
     display: grid;
 
     grid-template-columns:
@@ -601,35 +816,49 @@ body::before {
     gap: 25px;
 }
 
+
 .award-card {
+
     padding: 35px 28px;
 
-    background: rgba(255, 255, 255, 0.04);
+    background:
+        rgba(255,255,255,0.04);
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border:
+        1px solid
+        rgba(255,255,255,0.08);
 
     border-radius: 22px;
 
     transition: 0.4s;
 }
 
+
 .award-card:hover {
+
     transform: translateY(-8px);
 
-    background: rgba(255, 255, 255, 0.06);
+    background:
+        rgba(255,255,255,0.06);
 }
 
+
 .award-icon {
+
     font-size: 42px;
 
     margin-bottom: 20px;
 }
 
+
 .award-card h3 {
+
     margin-bottom: 12px;
 }
 
+
 .award-card p {
+
     color: #92929e;
 
     line-height: 1.7;
@@ -643,17 +872,20 @@ body::before {
 ========================================= */
 
 .letter-section {
+
     align-items: center;
 
     background:
         radial-gradient(
             circle at center,
-            rgba(231, 184, 124, 0.06),
+            rgba(231,184,124,0.06),
             transparent 45%
         );
 }
 
+
 .letter-card {
+
     max-width: 750px;
 
     padding: 60px;
@@ -661,21 +893,26 @@ body::before {
     background:
         linear-gradient(
             145deg,
-            rgba(255, 255, 255, 0.07),
-            rgba(255, 255, 255, 0.025)
+            rgba(255,255,255,0.07),
+            rgba(255,255,255,0.025)
         );
 
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border:
+        1px solid
+        rgba(255,255,255,0.1);
 
     border-radius: 25px;
 
     backdrop-filter: blur(20px);
 
     box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.3);
+        0 30px 80px
+        rgba(0,0,0,0.3);
 }
 
+
 .letter-card h2 {
+
     font-family: "DM Serif Display", serif;
 
     font-size: 48px;
@@ -683,7 +920,9 @@ body::before {
     margin-bottom: 30px;
 }
 
+
 .letter-card p {
+
     color: #b7b7c1;
 
     line-height: 2;
@@ -691,7 +930,9 @@ body::before {
     margin-bottom: 20px;
 }
 
+
 .signature {
+
     color: #e7b87c !important;
 
     margin-top: 35px;
@@ -707,6 +948,7 @@ body::before {
 ========================================= */
 
 .final-section {
+
     min-height: 100vh;
 
     text-align: center;
@@ -716,16 +958,20 @@ body::before {
     background:
         radial-gradient(
             circle at center,
-            rgba(231, 184, 124, 0.08),
+            rgba(231,184,124,0.08),
             transparent 40%
         );
 }
 
+
 .final-content {
+
     max-width: 700px;
 }
 
+
 .final-content h2 {
+
     font-family: "DM Serif Display", serif;
 
     font-size: clamp(45px, 7vw, 80px);
@@ -735,11 +981,15 @@ body::before {
     margin-bottom: 40px;
 }
 
+
 .final-content h2 span {
+
     color: #e7b87c;
 }
 
+
 .final-gift {
+
     display: none;
 
     margin-top: 50px;
@@ -748,14 +998,20 @@ body::before {
 
     border-radius: 25px;
 
-    background: rgba(255, 255, 255, 0.05);
+    background:
+        rgba(255,255,255,0.05);
 
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border:
+        1px solid
+        rgba(255,255,255,0.12);
 
-    animation: finalReveal 1s ease forwards;
+    animation:
+        finalReveal 1s ease forwards;
 }
 
+
 .final-gift h3 {
+
     font-family: "DM Serif Display", serif;
 
     font-size: 40px;
@@ -763,40 +1019,57 @@ body::before {
     margin: 20px 0;
 }
 
+
 .final-gift p {
+
     color: #aaaab7;
 
     line-height: 1.8;
 }
 
+
 .confetti {
+
     font-size: 25px;
 
     word-spacing: 10px;
 
-    animation: confettiMove 2s infinite alternate;
+    animation:
+        confettiMove 2s infinite alternate;
 }
 
+
 .big-heart {
+
     font-size: 55px !important;
 
     margin-top: 20px;
 
-    animation: heartBeat 1.2s infinite;
+    animation:
+        heartBeat 1.2s infinite;
 }
+
 
 @keyframes finalReveal {
 
     from {
+
         opacity: 0;
+
         transform: scale(0.8);
+
     }
 
     to {
+
         opacity: 1;
+
         transform: scale(1);
+
     }
+
 }
+
 
 @keyframes confettiMove {
 
@@ -807,7 +1080,9 @@ body::before {
     to {
         transform: translateY(-8px);
     }
+
 }
+
 
 @keyframes heartBeat {
 
@@ -819,6 +1094,7 @@ body::before {
     50% {
         transform: scale(1.15);
     }
+
 }
 
 
@@ -827,16 +1103,21 @@ body::before {
 ========================================= */
 
 footer {
+
     padding: 40px 20px;
 
     text-align: center;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-top:
+        1px solid
+        rgba(255,255,255,0.06);
 
     color: #777784;
 }
 
+
 .footer-small {
+
     font-size: 11px;
 
     margin-top: 8px;
@@ -846,14 +1127,46 @@ footer {
 
 
 /* =========================================
-   RESPONSIVE DESIGN
+   SCROLL REVEAL
+========================================= */
+
+.memory-card,
+.award-card,
+.letter-card,
+.section-title {
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+.memory-card.show,
+.award-card.show,
+.letter-card.show,
+.section-title.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   RESPONSIVE
 ========================================= */
 
 @media (max-width: 900px) {
 
     .memory-grid,
     .awards-grid {
+
         grid-template-columns: 1fr 1fr;
+
     }
 
 }
@@ -862,56 +1175,93 @@ footer {
 @media (max-width: 650px) {
 
     .hero {
+
         padding: 60px 20px;
+
     }
+
 
     .hero h1 {
+
         font-size: 58px;
+
     }
+
 
     .intro-text {
+
         font-size: 16px;
+
     }
+
 
     .birthday-message {
+
         padding: 25px;
+
     }
+
 
     .birthday-message h2 {
+
         font-size: 38px;
+
     }
+
 
     .section {
+
         padding: 90px 20px;
+
     }
 
+
     .section-title h2 {
+
         font-size: 45px;
+
     }
+
 
     .memory-grid,
     .awards-grid {
+
         grid-template-columns: 1fr;
+
     }
+
 
     .photo-placeholder {
-        height: 240px;
+
+        height: 320px;
+
     }
+
 
     .letter-card {
+
         padding: 35px 25px;
+
     }
+
 
     .letter-card h2 {
+
         font-size: 40px;
+
     }
 
+
     .music-btn {
+
         width: 42px;
+
         height: 42px;
 
         top: 15px;
+
         right: 15px;
+
     }
 
 }
@@ -920,18 +1270,23 @@ footer {
 @media (max-width: 400px) {
 
     .hero h1 {
+
         font-size: 48px;
+
     }
+
 
     .section-title h2 {
+
         font-size: 38px;
+
     }
 
+
     .birthday-message h2 {
+
         font-size: 32px;
+
     }
 
 }
-```
-
-This CSS is ready for the `index.html`. **Next we need `script.js`** for the gift opening animation, music button, smooth navigation, and final surprise reveal.
