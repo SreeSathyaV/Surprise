@@ -1,33 +1,30 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>For My Brother ❤️</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         BACKGROUND STARS
-    ========================== -->
+    <!-- Background -->
     <div class="stars"></div>
     <div class="stars stars-two"></div>
 
 
-    <!-- =========================
-         MUSIC BUTTON
-    ========================== -->
+    <!-- Music Button -->
     <button id="musicBtn" class="music-btn" onclick="toggleMusic()">
         🎵
     </button>
@@ -37,9 +34,8 @@
     </audio>
 
 
-    <!-- =========================
-         HERO / OPENING SECTION
-    ========================== -->
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
 
         <div class="hero-content">
@@ -56,7 +52,9 @@
                 I made something special just for you.
             </p>
 
-            <!-- Gift Box -->
+
+            <!-- Gift -->
+
             <div class="gift-area">
 
                 <div id="giftBox" class="gift-box" onclick="openGift()">
@@ -64,8 +62,11 @@
                     <div class="gift-lid"></div>
 
                     <div class="gift-body">
+
                         <div class="gift-ribbon-vertical"></div>
+
                         <div class="gift-ribbon-horizontal"></div>
+
                     </div>
 
                 </div>
@@ -76,7 +77,9 @@
 
             </div>
 
-            <!-- Hidden Birthday Message -->
+
+            <!-- Birthday Message -->
+
             <div id="birthdayMessage" class="birthday-message">
 
                 <p class="small-text">
@@ -101,6 +104,7 @@
 
         </div>
 
+
         <div class="scroll-indicator">
             ↓
         </div>
@@ -108,9 +112,9 @@
     </section>
 
 
-    <!-- =========================
-         BIRTHDAY INTRO
-    ========================== -->
+
+    <!-- ================= BIRTHDAY INTRO ================= -->
+
     <section id="memories" class="section birthday-section">
 
         <div class="section-title">
@@ -120,7 +124,8 @@
             </p>
 
             <h2>
-                Another year of being<br>
+                Another year of being
+                <br>
                 <span>awesome.</span>
             </h2>
 
@@ -136,9 +141,9 @@
     </section>
 
 
-    <!-- =========================
-         MEMORY SECTION
-    ========================== -->
+
+    <!-- ================= MEMORIES ================= -->
+
     <section class="section memories-section">
 
         <div class="section-title">
@@ -148,50 +153,95 @@
             </p>
 
             <h2>
-                A few moments<br>
+                A few moments
+                <br>
                 <span>worth remembering.</span>
             </h2>
 
+            <p>
+                Three photos, countless memories. ❤️
+            </p>
+
         </div>
+
 
         <div class="memory-grid">
 
+
+            <!-- PHOTO 1 -->
+
             <div class="memory-card">
+
                 <div class="photo-placeholder">
-                    📷
+
+                    <img
+                        src="assets/photo1.jpeg"
+                        alt="Brother Memory 1"
+                    >
+
                 </div>
 
-                <h3>Memory One</h3>
+                <h3>
+                    Our First Memory ❤️
+                </h3>
 
                 <p>
-                    Add one of our favourite memories here.
+                    One of those little moments
+                    that I'll always remember.
                 </p>
+
             </div>
 
 
+
+            <!-- PHOTO 2 -->
+
             <div class="memory-card">
+
                 <div class="photo-placeholder">
-                    📷
+
+                    <img
+                        src="assets/photo2.jpeg"
+                        alt="Brother Memory 2"
+                    >
+
                 </div>
 
-                <h3>Memory Two</h3>
+                <h3>
+                    Good Times ✨
+                </h3>
 
                 <p>
-                    A moment that still makes me smile.
+                    A memory that still
+                    makes me smile.
                 </p>
+
             </div>
 
 
+
+            <!-- PHOTO 3 -->
+
             <div class="memory-card">
+
                 <div class="photo-placeholder">
-                    📷
+
+                    <img
+                        src="assets/photo3.jpeg"
+                        alt="Brother Memory 3"
+                    >
+
                 </div>
 
-                <h3>Memory Three</h3>
+                <h3>
+                    Always Us ❤️
+                </h3>
 
                 <p>
-                    Just another unforgettable moment.
+                    No matter how much we fight,
+                    these memories stay special.
                 </p>
+
             </div>
 
         </div>
@@ -199,9 +249,9 @@
     </section>
 
 
-    <!-- =========================
-         BROTHER AWARDS
-    ========================== -->
+
+    <!-- ================= BROTHER AWARDS ================= -->
+
     <section class="section awards-section">
 
         <div class="section-title">
@@ -211,37 +261,70 @@
             </p>
 
             <h2>
-                Brother of the Year<br>
+                Brother of the Year
+                <br>
                 <span>probably.</span>
             </h2>
 
         </div>
 
+
         <div class="awards-grid">
 
-            <div class="award-card">
-                <div class="award-icon">😂</div>
-                <h3>Professional Annoyer</h3>
-                <p>
-                    Somehow you never run out of ways to annoy me.
-                </p>
-            </div>
 
             <div class="award-card">
-                <div class="award-icon">🍕</div>
-                <h3>Food Stealing Champion</h3>
+
+                <div class="award-icon">
+                    😂
+                </div>
+
+                <h3>
+                    Professional Annoyer
+                </h3>
+
                 <p>
-                    Especially when the food belongs to me.
+                    Somehow you never run out
+                    of ways to annoy me.
                 </p>
+
             </div>
 
+
+
             <div class="award-card">
-                <div class="award-icon">❤️</div>
-                <h3>Secretly Caring</h3>
+
+                <div class="award-icon">
+                    🍕
+                </div>
+
+                <h3>
+                    Food Stealing Champion
+                </h3>
+
+                <p>
+                    Especially when the food
+                    belongs to me.
+                </p>
+
+            </div>
+
+
+
+            <div class="award-card">
+
+                <div class="award-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Secretly Caring
+                </h3>
+
                 <p>
                     You may not always say it,
                     but I know you care.
                 </p>
+
             </div>
 
         </div>
@@ -249,9 +332,9 @@
     </section>
 
 
-    <!-- =========================
-         LETTER SECTION
-    ========================== -->
+
+    <!-- ================= LETTER ================= -->
+
     <section class="section letter-section">
 
         <div class="letter-card">
@@ -265,31 +348,39 @@
             </h2>
 
             <p>
-                Having you as my brother means having someone
-                who can annoy me one minute and make me laugh
-                the next.
+                Having you as my brother means having
+                someone who can annoy me one minute
+                and make me laugh the next.
             </p>
 
             <p>
                 We've shared so many little moments,
-                silly fights, laughs, memories and conversations.
-                And honestly, I wouldn't trade them for anything.
+                silly fights, laughs, memories and
+                conversations.
             </p>
 
             <p>
-                I hope this new year of your life brings you
-                happiness, success, good health and everything
-                you've been wishing for.
+                And honestly, I wouldn't trade them
+                for anything.
             </p>
 
             <p>
-                No matter how much we fight or tease each other,
-                you'll always have a special place in my heart.
+                I hope this new year of your life
+                brings you happiness, success,
+                good health and everything you've
+                been wishing for.
+            </p>
+
+            <p>
+                No matter how much we fight or tease
+                each other, you'll always have a
+                special place in my heart.
                 ❤️
             </p>
 
             <p class="signature">
-                — With lots of love,<br>
+                — With lots of love,
+                <br>
                 Your Sibling ❤️
             </p>
 
@@ -298,9 +389,9 @@
     </section>
 
 
-    <!-- =========================
-         FINAL SURPRISE
-    ========================== -->
+
+    <!-- ================= FINAL SURPRISE ================= -->
+
     <section class="section final-section">
 
         <div class="final-content">
@@ -310,13 +401,18 @@
             </p>
 
             <h2>
-                There's still<br>
+                There's still
+                <br>
                 <span>one more surprise.</span>
             </h2>
 
-            <button class="final-gift-btn" onclick="openFinalGift()">
+            <button
+                class="final-gift-btn"
+                onclick="openFinalGift()"
+            >
                 🔐 Open Your Final Gift
             </button>
+
 
             <div id="finalGift" class="final-gift">
 
@@ -345,9 +441,9 @@
     </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
         <p>
@@ -361,11 +457,8 @@
     </footer>
 
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
-</html>
-```
 
-This gives you the **complete main structure**. Next, `style.css` will make it look like a proper cinematic birthday gift website rather than a plain HTML page.
+</html>
